@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/namek_landscape" /> <!-- Background Image -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start|top"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|top"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="124dp"
+                android:layout_height="177dp"
+                android:src="@drawable/scouter_blank" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:id="@+id/realName_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="Name:"
+                    style="@style/CustomTextStyle" />
+
+                <TextView
+                    android:id="@+id/alias_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="Occupation:"
+                    style="@style/CustomTextStyle" />
+                <TextView
+                    android:id="@+id/height_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="Power Level:"
+                    style="@style/CustomTextStyle" />
+                <TextView
+                    android:id="@+id/weight_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="Race:"
+                    style="@style/CustomTextStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <!-- Use a RelativeLayout to overlay the dot on top of the map -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- ImageView for the map -->
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="411dp"
+                android:src="@drawable/dbzradar" />
+
+            <!-- FrameLayout to overlay the dot on the map -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Dot 1 -->
+                <Button
+                    android:id="@+id/dot1"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="50dp" />
+
+                <!-- Dot 2 -->
+                <Button
+                    android:id="@+id/dot2"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="100dp" />
+
+                <!-- Dot 3 -->
+                <Button
+                    android:id="@+id/dot3"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="150dp" />
+
+                <!-- Dot 4 -->
+
+                <Button
+                    android:id="@+id/dot4"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="155dp" />
+
+                <Button
+                    android:id="@+id/dot5"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="235dp" />
+
+                <!-- Dot 6 -->
+                <Button
+                    android:id="@+id/dot6"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="305dp"
+                    android:layout_marginTop="155dp" />
+
+                <!-- Dot 7 -->
+                <Button
+                    android:id="@+id/dot7"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="260dp" />
+
+                <!-- Dot 8 -->
+                <Button
+                    android:id="@+id/dot8"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="30dp" />
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:layout_width="74dp"
+                android:layout_height="84dp"
+                android:gravity="center"
+                android:src="@drawable/capsule" />
+
+
+            <TextView
+                android:id="@+id/timestamp_text"
+                style="@style/CustomTextStyle"
+                android:layout_width="361dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

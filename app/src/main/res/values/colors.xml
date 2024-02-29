@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="dot_color_1">#4682B4</color> <!-- capt america -->
+    <color name="dot_color_2">#009900</color> <!-- hulk -->
+    <color name="dot_color_3">#3366FF</color> <!-- thor -->
+    <color name="dot_color_4">#EE82EE</color> <!-- black widow -->
+
+
+    <color name="dot_color_5">#40E0D0</color> <!-- dr strange -->
+    <color name="dot_color_6">#FFD700</color> <!-- iron man -->
+    <color name="dot_color_7">#7744AA</color> <!-- black panther -->
+    <color name="dot_color_8">#DC143C</color> <!-- hawkeye -->
+
+
+    <color name="dot_color_69">#009900</color> <!-- Blue color -->
+    <color name="dot_color_420">#7744AA</color> <!-- Blue color -->
+    <color name="dot_color_1337">#0044FF</color> <!-- Blue color -->
+    <!-- Add more colors as needed -->
+
+
+</resources>
